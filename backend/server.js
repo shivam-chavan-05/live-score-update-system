@@ -1,4 +1,3 @@
-// backend/server.js
 require("dotenv").config();
 const express = require("express");
 const WebSocket = require("ws");
@@ -31,7 +30,7 @@ wss.on("connection", (ws) => {
   });
 });
 
-// API to update score
+
 app.post("/update-score", async (req, res) => {
   const { matchId, score } = req.body;
 
